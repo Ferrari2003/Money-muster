@@ -5,12 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Practice</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/4e6c12451b.js" crossori
 gin="anonymous"></script>
 </head>
 <body>
-    <h1 class="text_color">Money Master <i class="fa-solid fa-sack-dollar"></i></h1>
+    <h1 class="text-blue-700 text-center text-7xl font-medium mt-10">Money Master <i class="text-orange-600 fa-solid fa-sack-dollar"></i></h1>
+    <section>
+        <div>
+            <h2 class="text-center text-6xl mt-10 ">Income</h2>
+            <div class="text-center mt-10 ">
+                <h2 class="text-5xl">Income: <input id="btn-income" class="bg-gray-400 rounded-xl" type="text" ></h2>              
+            </div>
+            <div class="mt-10">
+                <h2 class="text-center text-6xl ">Expenses</h2>
+            </div>
+            <div class="text-center mt-10 ">
+                <h2 class="text-5xl">Food: <input id="btn-food" class="bg-gray-400 rounded-xl" type="text" ></h2>              
+            </div>
+            <div class="text-center mt-10 ">
+                <h2 class="text-5xl">Rent: <input id="btn-rent" class="bg-gray-400 rounded-xl" type="text" ></h2>              
+            </div>
+            <div class="text-center mt-10 ">
+                <h2 class="text-5xl">Clothes: <input id="input-clothes" class="bg-gray-400 rounded-xl" type="text" ></h2> 
+                             
+            </div>
+            <div class="text-center mt-10">
+                <button id="btn-calculate" class="bg-cyan-400 px-5 py-3 text-5xl text-white rounded-xl">Calculate</button>
+            </div>
+            <div class="mt-10">
+                <h1  class="text-center text-5xl">Total Expenses:<span id="expenses">00</span></h1>
+            </div>
+            <div class="mt-10">
+                <h1 class="text-center text-5xl">Balance:<span id="balance">00</span></h1>
+            </div>
+            <div class="mt-10">
+                <h1 class="text-center text-5xl">Save: <input type="number" class="text-center" min="1" max="99" name=""></h1>
+            </div>
+        </div>
+       
+    </section>
+
     <script src="javascript/app.js"></script>
 </body>
 </html>
